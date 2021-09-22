@@ -1,0 +1,9 @@
+<launch>
+    <node name="set_origin1" pkg="guide_drone"
+          type="set_origin1.py" output="screen"/>
+    <node name="set_origin2" pkg="guide_drone"
+          type="set_origin2.py" output="screen"/>
+    <!--<node name="set_origin3" pkg="guide_drone"
+          type="set_origin3.py" output="screen"/>-->
+</launch>
+

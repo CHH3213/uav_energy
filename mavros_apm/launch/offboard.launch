@@ -1,0 +1,11 @@
+<launch>
+	<!--roslaunch will automatically start a roscore if there isn't already one running-->
+
+	<!-- launch mavros -->
+	<include file="$(find mavros_apm)/launch/apm_SITL.launch"/>
+
+	<!-- run offboard_node -->
+	<node pkg="mavros_apm" type="mavros_apm_node" name="mavros_apm_node" launch-prefix="gnome-terminal -x"/>    
+
+
+</launch>

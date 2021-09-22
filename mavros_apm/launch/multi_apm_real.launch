@@ -1,0 +1,27 @@
+<launch>
+
+<group ns="drone1">
+	<include file="$(find mavros_apm)/launch/apm_real.launch" >
+		<arg name="fcu_url" default="/dev/ttyUSB0:57600" />   <!-- replace arg in include file -->
+	</include>
+</group>
+
+
+<group ns="drone2">
+	<include file="$(find mavros_apm)/launch/apm_real.launch" >
+		<arg name="fcu_url" default="/dev/ttyUSB1:57600" />   
+	</include>
+</group>
+
+
+<!--<group ns="drone3">
+	<include file="$(find mavros_apm)/launch/apm_real.launch" >
+		<arg name="fcu_url" default="/dev/ttyUSB2:57600" />   
+	</include>
+</group>-->
+
+
+<!-- launch-prefix="xterm-e" -->
+
+</launch>
+
